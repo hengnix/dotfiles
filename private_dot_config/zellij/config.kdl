@@ -1,0 +1,7 @@
+default_layout "compact"
+
+pane_frames false
+
+scrollback_editor "/usr/bin/helix"
+
+theme "catppuccin-latte"
