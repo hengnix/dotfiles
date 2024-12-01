@@ -1,5 +1,9 @@
 set -gx LANG zh_CN.UTF-8
 
+fish_add_path --global ~/.bun/bin
+
+fish_vi_key_bindings
+
 if status is-interactive
     set fish_greeting ""
 
