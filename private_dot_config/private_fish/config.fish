@@ -9,6 +9,7 @@ if status is-interactive
 
     alias hx='command helix'
     alias zj='command zellij'
+    alias svmr="export VM_DISABLE='' && source /home/heng/.config/fish/config.fish"
 
     function y
         set tmp (mktemp -t "yazi-cwd.XXXXXX")
