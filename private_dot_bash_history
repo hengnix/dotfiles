@@ -1,0 +1,6 @@
+sudo pacman-key --init
+sudo pacman-key --populate
+sudo pacman -Syy archlinux-keyring
+sudo pacman -Syyu
+sudo vim /etc/locale.gen
+sudo locale-gen
