@@ -12,6 +12,7 @@ Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-tbone'
 
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
@@ -63,7 +64,16 @@ set termguicolors
 set noshowmode
 
 colorscheme catppuccin_latte
-let g:lightline = { 'colorscheme': 'catppuccin_latte' }
+let g:lightline = {
+  \ 'colorscheme': 'catppuccin_latte',
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+  \ },
+  \ 'component_function': {
+  \   'gitbranch': 'FugitiveHead'
+  \ },
+  \ }
 
 set list
 set showcmd
