@@ -23,6 +23,8 @@ apt-get install -y \
     fzf \
     git \
     gnupg \
+    libc++-20-dev \
+    libc++abi-20-dev \
     lsb-release \
     man-db \
     net-tools \
