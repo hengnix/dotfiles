@@ -19,8 +19,6 @@ mkdir -p ${HOME}/.config/{bash,fastfetch,tmux}
 
 rm -f ${HOME}/.bash_profile ${HOME}/.bashrc
 
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
 curl -fsSL https://fnm.vercel.app/install | bash
 
 curl -fsSL https://get.pnpm.io/install.sh | sh -
