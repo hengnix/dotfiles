@@ -59,4 +59,5 @@ apt-get install -y \
 
 usermod "$sudoer" -aG docker
 
+apt-get update
 bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
