@@ -1,0 +1,11 @@
+\.git
+\.gitignore
+\.gitmodules
+
+^/README.*
+^/LICENSE.*
+
+.config/helix
+.config/yazi
+install-root.sh
+install-user.sh

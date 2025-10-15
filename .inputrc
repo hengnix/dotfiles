@@ -1,0 +1,7 @@
+# ~/.inputrc
+
+set bell-style none
+
+set editing-mode vi
+
+"\C-l": clear-screen

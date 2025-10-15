@@ -1,0 +1,12 @@
+[mgr]
+ratio = [2, 4, 3]
+show_hidden = true
+
+[opener]
+edit = [
+	{ run = '$EDITOR "$@"', block = true, for = "unix" },
+	{ run = "%EDITOR% %*",  block = true, for = "windows" },
+]
+open = [
+	{ run = 'xdg-open "$@"', desc = "Open" },
+]

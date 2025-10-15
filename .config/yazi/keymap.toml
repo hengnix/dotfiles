@@ -1,0 +1,4 @@
+[[mgr.prepend_keymap]]
+on   = [ "g", "d" ]
+run  = "cd ~/workspace"
+desc = "cd to ~/workspace"

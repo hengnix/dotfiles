@@ -1,0 +1,34 @@
+# ~/.gitconfig
+
+[commit]
+	gpgsign = true
+
+[core]
+	ignorecase = false
+	sshCommand = "ssh.exe"
+
+[credential]
+	helper = store
+
+[credential "helperselector"]
+	selected = manager
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = "/mnt/c/Users/Heng/AppData/Local/1Password/app/8/op-ssh-sign-wsl"
+
+[http]
+	sslVerify = true
+
+[init]
+	defaultBranch = main
+
+[log]
+	date = iso
+
+[user]
+	name = heng
+	email = 178408053+hengnix@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICzgr5GBsxKS3/n6AhdWpudw4G8oo2DTbMQvGAarY6pV
