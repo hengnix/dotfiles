@@ -23,6 +23,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 curl -fsSL https://fnm.vercel.app/install | bash
 
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
