@@ -53,19 +53,24 @@ if command -v zoxide >/dev/null 2>&1; then
   export _ZO_DOCTOR=0
 fi
 
-# pnpm
-export PNPM_HOME="/home/heng/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-
 # fnm
-export FNM_PATH="/home/heng/.local/share/fnm"
+export FNM_PATH="${XDG_DATA_HOME:-$HOME/.local/share}/fnm"
 if [ -d "$FNM_PATH" ]; then
-  export PATH="$FNM_PATH:$PATH"
+  case ":$PATH:" in
+    *":$FNM_PATH:"*) ;;
+    *) PATH="$FNM_PATH:$PATH" ;;
+  esac
   eval "$(fnm env)"
   eval "$(fnm env --use-on-cd --shell bash)"
+fi
+
+# pnpm
+export PNPM_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/pnpm"
+if [ -d "$PNPM_HOME" ]; then
+  case ":$PATH:" in
+    *":$PNPM_HOME:"*) ;;
+    *) PATH="$PNPM_HOME:$PATH" ;;
+  esac
 fi
 
 PS1='[\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\w\[\033[00m\]]\$ '
